@@ -1,0 +1,250 @@
+* {
+	margin:0;
+	padding:0;
+	position:relative;
+	box-sizing: border-box;
+} /* ------------------------CZĘŚĆ-GÓRNA-MENU------------------------ */
+body{
+   background-color: darkgray; 
+}
+
+.container {
+    background-color: darkgray;
+    width: 100%;
+    height: 100%;
+}
+
+      /* wygląd głównego elementu - ol */
+      ol {
+        list-style-type:none;
+        padding:40px 120px;
+        margin:0;       
+        font-size:17px;
+        height:2em;
+        line-height:4em;
+        text-align:center;
+        height: 100px;
+        left: 65px;
+        font-family: 'Jokerman'; Helvetica: monospace;
+        position: relative;
+          
+      }
+      /* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+      ol a {
+        display:block;
+        text-decoration:none;
+        color:white;
+        padding:0px;
+        
+      }
+    li a {
+    color:white;
+    }
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol */
+      ol > li {
+        float:left;
+        width:100px;
+        margin-left:1px;
+        background-color:#333;
+        height:4em;
+        width: 10em;      
+      }
+
+      /* wygląd elementu - li - pierwszego dziecka elementu - ol */
+      ol > li:first-child {
+        margin-left:0;
+      }
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover {
+        background-color:#EEE;
+      }
+
+      /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover > a {
+        color:#09C;
+      }
+
+      /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover > ul {
+        display:block;
+      }
+
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU------------------------ */
+
+      /* wygląd głównych rozwijanych elementów - ul */
+      ol > li > ul {
+        display:none;
+          
+        list-style-type:none;
+       
+          
+        margin:0;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej */
+      ol > li > ul > li {
+        position:relative;
+          height: 50px;
+        background-color:#333;
+      }
+
+      /* wygląd elementu - a - w części rozwijanej */
+      
+
+      /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+      ol > li > ul > li:hover {
+        background-color:#FFF;
+      }
+
+      /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+      ol > li > ul > li:hover > a {
+          
+        bottom: 10px;
+        color:red;
+      }
+#header {
+    position: relative;
+    background-image: url("../img/naglowek2.jpg");
+    width: 100%;
+    height: 175px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+input[type=text]{
+    width: 80%;
+    padding: 8px 6px;     
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;  
+}
+
+input[type=password]{
+    width: 80%;
+    padding: 8px 6px;  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;   
+}
+
+
+
+#wybierz  {
+    background-color:cornsilk; 
+    left: 5px;
+    height: 140px;
+    width: 400px;
+    bottom: 170px;
+    
+}
+
+#wybierz > form > input[type=submit] {
+	
+    width: 30%;
+    left: 240px;
+    bottom: 59px;
+    background-color: #333;
+    color: white;
+    padding: 8px 8px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;	
+}
+
+#panel_logowania > form > input[type=submit] {
+	
+    width: 50%;
+    left: 40px;
+    bottom: 8px;
+    background-color: #333;
+    color: white;
+    padding: 8px 8px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;	
+}
+	 
+ 
+
+#formularz {
+    display: block;
+    position: absolute;
+    width: 200px;
+	left: 10px;
+    bottom: 0;
+    padding: 0px 4px;
+    
+}
+ #komunikat {
+    position: absolute;
+	color: red;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Times: monospace;
+    left: 8px;
+    bottom: 15px;
+    padding: 442px 10px;
+   
+}             
+#wybierz > select {
+        left: 20px;
+        padding: 10px 20px;
+      
+    }
+select {
+        width: 30%;
+        left: 20px;
+        padding: 10px 20px;    
+    }  
+#red_komunikat {
+    position: relative;
+	color: red;
+	font-size: 18px;
+	font-family: "Trebuchet MS", Times: monospace;
+  
+}
+#green_komunikat {
+    position: relative;
+	color: green;
+	font-size: 18px;
+	font-family: "Trebuchet MS", Times: monospace; 
+}
+
+#komuniakty {
+    top: 20px;
+}
+
+@media (min-width: 1200px) {
+	.container {width:100%;}
+	aside {width:30%;}
+	#main {width:65%;}
+}
+@media (max-width: 1100px) and (min-width: 1000px) {
+	.container {width:100%;}
+	aside {width:30%;}
+	#main {width:65%;}
+}
+@media (max-width: 1000px) and (min-width: 800px) {
+	.container {width:width:100%;}
+	aside {width:30%;}
+	#main {width:65%;}
+}
+@media (max-width: 800px) and (min-width: 500px) {
+	.container {width:100%;}
+	aside,
+	#main {width:100%;}
+}
+@media (max-width: 500px) {
+	.container {width:100%;}
+    body {width: 100%}
+	#header > ol > li {
+            width:100%;
+            float: left;
+            }
+    
+        
+}
